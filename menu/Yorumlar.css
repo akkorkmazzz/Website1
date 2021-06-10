@@ -1,0 +1,143 @@
+@media screen and (min-width: 960px){
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Baloo Tammudu 2', cursive;
+        box-sizing: border-box;
+        background-position: center;
+    }
+    body{
+        background-color: black;
+        background-size: cover;
+        
+    }
+    .navbar{
+        background: linear-gradient(to left, rgb(250, 111, 30), rgb(153, 0, 153));
+    }
+
+    .navbar:hover{
+        background: linear-gradient(to left, rgb(153, 0, 153), rgb(250, 111, 30));
+    }
+    .card{
+        float: left;
+    }
+    #title{
+        height: auto;
+        font-size: 1.7rem;
+        color: #C8355D;
+        text-shadow: 0 0 10px rgb(250, 111, 30);
+        text-align: center;
+        margin-top: 7rem;
+    }
+    #title1{
+        height: auto;
+        font-size: 1.2rem;
+        color: #C8355D;
+        text-align: center;
+        margin-top: 5rem;
+    }
+    .card-body{
+        color: #C8355D;
+        background-color: black;
+        border: 0.1rem solid rgb(250, 111, 30);
+    }
+    .card-link{
+        color: rgb(153, 0, 153);
+    }
+    .backtotop{
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        background-color: black;
+        color: #C8355D;
+        border-color: rgb(250, 111, 30);
+    }
+    .card{
+        border-color: rgb(250, 111, 30);
+    }
+    .container{
+        text-align: center;
+    }
+    .col1{
+        display: inline-block;
+        float: left;
+    }
+    .col2{
+        display: inline-block;
+        float: left;
+        width: 40rem;
+        margin-top: 5rem;
+        margin-left: 15rem;
+    }
+}
+@media screen and (max-width:960px){
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Baloo Tammudu 2', cursive;
+        box-sizing: border-box;
+        background-position: center;
+    }
+    body{
+        background-color: black;
+        background-size: cover;
+        
+    }
+    .navbar{
+        background: linear-gradient(to left, rgb(250, 111, 30), rgb(153, 0, 153));
+    }
+
+    .navbar:hover{
+        background: linear-gradient(to left, rgb(153, 0, 153), rgb(250, 111, 30));
+    }
+    .card{
+        float: left;
+    }
+    #title{
+        height: auto;
+        font-size: 1.7rem;
+        color: #C8355D;
+        text-shadow: 0 0 10px rgb(250, 111, 30);
+        text-align: center;
+        margin-top: 7rem;
+    }
+    #title1{
+        height: auto;
+        font-size: 1.2rem;
+        color: #C8355D;
+        text-align: center;
+        margin-top: 5rem;
+    }
+    .card-body{
+        color: #C8355D;
+        background-color: black;
+        border: 0.1rem solid rgb(250, 111, 30);
+    }
+    .card-link{
+        color: rgb(153, 0, 153);
+    }
+    .backtotop{
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        background-color: black;
+        color: #C8355D;
+        border-color: rgb(250, 111, 30);
+    }
+    .card{
+        border-color: rgb(250, 111, 30);
+    }
+    #form{
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        text-align: center;
+    }
+    table{
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        text-align: center;
+        margin-top: 10rem;
+    }
+}

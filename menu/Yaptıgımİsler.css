@@ -1,0 +1,147 @@
+
+
+@media screen and (min-width: 960px){
+
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Baloo Tammudu 2', cursive;
+        box-sizing: border-box;
+        background-position: center;
+    }
+    body{
+        background-color: black;
+        background-size: cover;
+        
+    }
+    ::-webkit-scrollbar {
+        width: 10px;
+      }
+      
+      ::-webkit-scrollbar-track {
+        background: #C8355D; 
+      }
+       
+      ::-webkit-scrollbar-thumb {
+        background: rgb(153, 0, 153); 
+      }
+      
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+      }
+    .navbar{
+        background: linear-gradient(to left, rgb(250, 111, 30), rgb(153, 0, 153));
+    }
+    
+    .navbar:hover{
+        background: linear-gradient(to left, rgb(153, 0, 153), rgb(250, 111, 30));
+    }
+    .card{
+        border-color: rgb(250, 111, 30);
+        width: 50%;
+        float: left;
+        padding: .5rem;
+        background-color: black;  
+    }
+    #title{
+        font-size: 1.7rem;
+        color: #C8355D;
+        text-shadow: 0 0 10px rgb(250, 111, 30);
+        text-align: center;
+        margin-top: 7rem;
+        margin-bottom: 2rem;
+    }
+    .card-body{
+        color: #C8355D;
+        background-color: black;
+        border: 0.1rem solid rgb(250, 111, 30);
+        float: left;
+    }
+    .card-link{
+        color: rgb(153, 0, 153);
+    }
+    .backtotop{
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        background-color: black;
+        color: #C8355D;
+        border-color: rgb(250, 111, 30);
+    }
+    .card-img-top{
+        height: 400px;
+        margin-bottom: 1.5rem;
+    }
+    
+}
+        
+@media screen and (max-width:960px){
+
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Baloo Tammudu 2', cursive;
+        box-sizing: border-box;
+        background-position: center;
+    }
+    body{
+        background-color: black;
+        background-size: cover;
+        
+    }
+    ::-webkit-scrollbar {
+        width: 10px;
+      }
+      
+      ::-webkit-scrollbar-track {
+        background: #C8355D; 
+      }
+       
+      ::-webkit-scrollbar-thumb {
+        background: rgb(153, 0, 153); 
+      }
+      
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+      }
+    .navbar{
+        background: linear-gradient(to left, rgb(250, 111, 30), rgb(153, 0, 153));
+    }
+    
+    .navbar:hover{
+        background: linear-gradient(to left, rgb(153, 0, 153), rgb(250, 111, 30));
+    }
+    .card{
+        border-color: rgb(250, 111, 30);
+        width: 100%; 
+    }
+    #title{
+        font-size: 1.7rem;
+        color: #C8355D;
+        text-shadow: 0 0 10px rgb(250, 111, 30);
+        text-align: center;
+        margin-top: 7rem;
+        margin-bottom: 2rem;
+    }
+    .card-body{
+        color: #C8355D;
+        background-color: black;
+        border: 0.1rem solid rgb(250, 111, 30);
+        float: left;
+    }
+    .card-link{
+        color: rgb(153, 0, 153);
+    }
+    .backtotop{
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        background-color: black;
+        color: #C8355D;
+        border-color: rgb(250, 111, 30);
+    }
+    .card-img-top{
+        height: 400px;
+        margin-bottom: 1.5rem;
+    }
+}

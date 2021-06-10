@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="kişisel,site,tasarım">
+    <meta name="description" content="Bu benim kişisel websitemdir.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Yorumlar.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <title>PROJE</title>
+
+  </head>
+  <body>
+
+    <div class="main">
+
+        <section>
+
+            <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+
+                <div class="container">
+
+                    <a href="#" class="navbar-brand">
+                        <i class="fab fa-adn fa-lg" style="color:black"></i>
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div id="navbarCollapse" class="collapse navbar-collapse">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item mx-2">
+                                <a href="../AnaSayfa.html" class="nav-link text-dark font-weight-bold">Ana Sayfa</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a href="Hakkımda.html" class="nav-link text-dark font-weight-bold">Hakkımda</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a href="Yaptıgımİsler.html" class="nav-link text-dark font-weight-bold">Yaptığım İşler</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a href="Yorumlar.html" class="nav-link text-dark font-weight-bold">Yorumlar</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a href="iletisim.html" class="nav-link text-dark font-weight-bold">İletişim</a>
+
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <main>
+                <div>
+                    <h2 id="title">Yorumlar</h2>
+                </div>
+                <div class="container">
+                    <div class="col1">
+                        <div class="row">
+                            <form id="form">
+                                <div class="form-group">
+                                    <label id="title1" for="Ad">
+                                        Adınız
+                                    </label>
+                                    <input type="text" class="form-control" name="isim" id="Adınız">
+                                </div>
+                                <div class="form-group">
+                                    <label id="title1" for="Yorumlar">
+                                        Yorumunuz
+                                    </label>
+                                    <input type="text" class="form-control" name="yorum" id="Yorumlar">
+                                </div>
+                                <button id="btn" type="submit" class="btn btn-danger">
+                                    Yorum Yap
+                                </button>
+                                <div id="hata">
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col2">
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th id="title1">Ad</th>
+                                    <th id="title1">Yorum</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody id="course-list">
+            
+                            </tbody>
+                        </table>
+                    </div>
+                </div> 
+            </main>
+        </section>
+    </div>
+    
+    <script>
+        
+        $("form").submit(function(e) {
+
+            e.preventDefault();
+
+            var errormessage="";
+
+            if($("#Adınız").val()=="" || $("#Yorumlar").val()==""){
+
+                errormessage+=`<p id="title1" class="uyarı">Boş Alanları Doldurunuz!</p>`;
+                
+
+            }else{
+
+                var isim = $("input[name='isim']").val();
+                var yorum = $("input[name='yorum']").val();
+
+                $(".table tbody").append("<tr><td id='title1'>"+isim+"</td><td id='title1'>"+yorum+"</td><td><button class='btn btn-danger btn-md btn-delete mr-3' type='button'>Sil</button></td></tr>");
+
+            }
+            
+            $("input[name='isim']").val("");
+            $("input[name='yorum']").val("");
+
+            if(errormessage!=""){
+                    
+                $("#hata").html(errormessage);
+            }
+
+            setTimeout(() => {
+
+                $(".uyarı").remove();
+
+            },2500);
+
+        });
+
+        $('body').on('click','.btn-delete',function() {
+
+            $(this).parents('tr').remove();
+
+            var deletemessage="";
+
+            deletemessage+=`<p id="title1" class="uyarı">Yorumunuz Silindi.</p>`;
+
+            if(deletemessage!=""){
+                    
+                    $("#hata").html(deletemessage);
+            }
+            
+            setTimeout(() => {
+
+                $(".uyarı").remove();
+
+            },2500);
+
+        });
+
+
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  </body>
+</html>
